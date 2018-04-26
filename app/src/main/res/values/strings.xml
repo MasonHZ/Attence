@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">企业考勤</string>
+    <string name="login_title">企业考勤系统</string>
+    <string name="login_name">账号:</string>
+    <string name="login_pwd">密码:</string>
+    <string name="telephone">手机号</string>
+    <string name="login_btn">登录</string>
+    <string name="signAction">员工签到</string>
+    <string name="signSQL">签到查询</string>
+    <string name="personInfo">个人信息</string>
+    <string name="sign_point1">公司总部</string>
+    <string name="sign_point2">工厂</string>
+    <string name="sign_point3">北京分部</string>
+    <string name="sign_poin4">浙江分部</string>
+    <string name="sign_point5">长沙分部</string>
+    <string name="sign_btn">点击签到</string>
+    <string name="info_tv_title">个人信息列表</string>
+    <string name="info_tv_num">工号:</string>
+    <string name="info_tv_name">姓名:</string>
+    <string name="info_tx_ccid">手机序列号:</string>
+    <string name="broadcast">本次为测试版本，正式版敬请期待，主要功能只有三个，签到，查询个人考勤以及查询个人信息</string>
+
+
+</resources>

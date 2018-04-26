@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a89370.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleStyle"
+                android:text="功能列表" />
+
+
+            <!--
+                想让文字有跑马灯效果，需添加几个属性
+                   ellipsize    省略点所在位置    设置为marquee
+                   focusable    是否聚焦
+                   focusableInTouchMode  是否触摸聚焦
+                   marqueeRepeatLimit    是否一直循环
+            -->
+            <!-- 一般会使用自定义控件 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/broadcast"
+                />
+
+
+
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/main_btn_signAction"-->
+            <!--android:layout_width="270dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/signAction"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/main_btn_signSQL"-->
+            <!--android:layout_width="270dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="50dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:text="@string/signSQL"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/main_btn_personInfo"-->
+            <!--android:layout_width="270dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/personInfo"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!-- numColumns设置列数 -->
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:id="@+id/home_gv"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="18dp">
+        </GridView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
